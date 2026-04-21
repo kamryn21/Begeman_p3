@@ -1,0 +1,133 @@
+body, html{
+  margin: 0px;;
+  padding: 0px;;
+  box-sizing: border-box;
+
+  .text-container {
+  position: relative; /* Established reference for the rectangle */
+  padding: 0px;
+  z-index: 1;
+}
+}
+
+h3 {
+  margin-left: 250px;
+  margin-right: 200px;
+} 
+
+iframe {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 145px;
+  height: 400px;          /* Adds space inside the box */
+  width: 425px;
+} 
+
+.my-box {
+  border: 6px solid pink; /* Creates the box outline */
+  position: absolute;
+  right: 150px;
+  padding: 10px;           /* Adds space inside the box */
+  width: 600px;            /* Optional: Sets a specific width */
+} 
+
+.first-box {
+  border: 6px solid pink; /* Creates the box outline */
+  position: absolute;
+  left: 200px;
+  margin-top: 20px;
+  padding: 10px; 
+  height: 165px;          /* Adds space inside the box */
+  width: 480px;            /* Optional: Sets a specific width */
+} 
+
+@media (max-width: 768px) {
+body, html{
+  margin: 0px;;
+  padding: 0px;;
+  box-sizing: border-box;
+
+  .text-container {
+  position: relative; /* Established reference for the rectangle */
+  padding: 0px;
+  z-index: 1;
+}
+}
+
+h3 {
+  margin-left: 250px;
+  margin-right: 200px;
+} 
+
+.first-box {
+  border: 6px solid pink; /* Creates the box outline */
+  position: absolute;
+  left: 0px;
+  margin-top: 20px;
+  padding: 10px; 
+  height: 135px;          /* Adds space inside the box */
+  width: 480px;            /* Optional: Sets a specific width */
+} 
+
+.my-box {
+  border: 6px solid pink; /* Creates the box outline */
+  position: absolute;
+  right: 150px;
+  padding: 10px;           /* Adds space inside the box */
+  width: 600px;            /* Optional: Sets a specific width */
+} 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    iframe {
+        display: none !important;
+    }
+}
+}
+
+@media (max-width: 425px) {
+body, html{
+  margin: 0px;;
+  padding: 0px;;
+  box-sizing: border-box;
+
+  .text-container {
+  position: relative; /* Established reference for the rectangle */
+  padding: 0px;
+  z-index: 1;
+}
+}
+
+h3 {
+  margin-left: 250px;
+  margin-right: 200px;
+} 
+
+.first-box {
+  border: 6px solid pink; /* Creates the box outline */
+  position: absolute;
+  left: 0px;
+  margin-top: 20px;
+  padding: 10px; 
+  height: 135px;          /* Adds space inside the box */
+  width: 480px;            /* Optional: Sets a specific width */
+} 
+
+.my-box {
+  border: 6px solid pink; /* Creates the box outline */
+  position: absolute;
+  right: 150px;
+  padding: 10px;           /* Adds space inside the box */
+  width: 600px;            /* Optional: Sets a specific width */
+} 
+
+#myIframe {
+  display: none;
+}
+
+.iframe {
+  display: none;
+}
+}
+
+/* call an element from your html and style it here! */
+/* for example... */
