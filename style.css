@@ -38,22 +38,21 @@ h3 {
   width: 370px;
 }
 
-iframe {
+.iframe {
   margin-left: 35px;
   height: 400px;
   width: 425px;
 } 
 .list-frame{
-    transform: scale(0.90);
- { width: 500px; height: 500px; }
+ width: 500px; 
+  height: 300px;
 }
 .draw-frame{
-    transform: scale(0.90);
-{ width: 500px; height: 500px; }
-}
+  width: 500px; 
+  height: 500px;
 .doodle-frame{
-  transform: scale(0.90);
-  { width: 500px; height: 500px; }
+  width: 500px; 
+  height: 500px; }
 }
 .Links {
   display: flex;
