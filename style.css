@@ -45,18 +45,15 @@ iframe {
 } 
 .list-frame{
     transform: scale(0.90);
-  transform-origin: 0 0;
  { width: 500px; height: 500px; }
 }
 .draw-frame{
     transform: scale(0.90);
-  transform-origin: 0 0;
 { width: 500px; height: 500px; }
 }
 .doodle-frame{
   transform: scale(0.90);
-  transform-origin: 0 0; 
-  { width: 500px; height: 2500px; }
+  { width: 500px; height: 500px; }
 }
 .Links {
   display: flex;
