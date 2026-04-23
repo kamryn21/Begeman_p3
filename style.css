@@ -16,11 +16,18 @@ h3 {
 } 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Main axis is horizontal */
   flex-wrap: wrap;
- justify-content: center;
+  justify-content: center; /* Centers items horizontally along the main axis */
+  align-items: center; /* Centers items vertically if the container has height */
   gap: 10px;
   width: 100%;
+}
+
+.first-box, .my-box {
+  /* Remove width: 100% to allow centering space */
+  width: 300px; 
+  box-sizing: border-box;
 }
 
 iframe {
