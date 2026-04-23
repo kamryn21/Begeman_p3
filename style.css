@@ -4,41 +4,61 @@ body, html{
   box-sizing: border-box;
 
   .text-container {
-  position: relative; /* Established reference for the rectangle */
+  position: relative; 
   padding: 0px;
   z-index: 1;
 }
 }
 
 h3 {
-  margin-left: 250px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
 } 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+  gap: 10px;
+}
+.first-box,.my-box{
+  width: 100%;
+}
 
 iframe {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 145px;
-  height: 400px;          /* Adds space inside the box */
+  margin-left: 35px;
+  height: 400px;
   width: 425px;
 } 
+.list-frame{
+    transform: scale(0.5);
+  transform-origin: 0 0;
+.small-frame { width: 300px; height: 200px; }
+}
+.draw-frame{
+    transform: scale(0.5);
+  transform-origin: 0 0;
+{ width: 300px; height: 200px; }
+}
+.doodle-frame{
+  transform: scale(0.5);
+  transform-origin: 0 0; { width: 300px; height: 200px; }
+}
 
 .my-box {
-  border: 6px solid pink; /* Creates the box outline */
-  position: absolute;
-  right: 150px;
-  padding: 10px;           /* Adds space inside the box */
-  width: 600px;            /* Optional: Sets a specific width */
+  border: 6px solid pink; 
+    left: 35px;
+  margin-top: 20px;
+  padding: 10px;         
+  width: 370px;      
 } 
 
 .first-box {
-  border: 6px solid pink; /* Creates the box outline */
-  position: absolute;
-  left: 200px;
+  border: 6px solid pink; 
   margin-top: 20px;
   padding: 10px; 
-  height: 165px;          /* Adds space inside the box */
-  width: 480px;            /* Optional: Sets a specific width */
+  height: 210px;     
+  width: 300px;            
 } 
 
 @media (max-width: 768px) {
@@ -48,39 +68,47 @@ body, html{
   box-sizing: border-box;
 
   .text-container {
-  position: relative; /* Established reference for the rectangle */
+  position: relative; 
   padding: 0px;
   z-index: 1;
 }
 }
 
 h3 {
-  margin-left: 250px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+} 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+  gap: 10px;
+   font-size: 14px;
+}
+.first-box,.my-box{
+  width: 100%;
+}
+
+.my-box {
+  border: 6px solid pink;
+    left: 35px;
+  margin-top: 20px;
+  padding: 10px;        
+  width: 200px;        
 } 
 
 .first-box {
-  border: 6px solid pink; /* Creates the box outline */
-  position: absolute;
-  left: 0px;
+  border: 6px solid pink; 
   margin-top: 20px;
   padding: 10px; 
-  height: 135px;          /* Adds space inside the box */
-  width: 480px;            /* Optional: Sets a specific width */
+  height: 370px;      
+  width: 100px;          
 } 
-
-.my-box {
-  border: 6px solid pink; /* Creates the box outline */
-  position: absolute;
-  right: 150px;
-  padding: 10px;           /* Adds space inside the box */
-  width: 600px;            /* Optional: Sets a specific width */
-} 
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    iframe {
-        display: none !important;
-    }
+iframe{
+  @media screen and (max-width:1500px){
+    display:none
+  }
 }
 }
 
@@ -91,43 +119,46 @@ body, html{
   box-sizing: border-box;
 
   .text-container {
-  position: relative; /* Established reference for the rectangle */
+  position: relative; 
   padding: 0px;
   z-index: 1;
 }
 }
 
 h3 {
-  margin-left: 250px;
-  margin-right: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+} 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+  gap: 5px;
+   font-size: 10px;
+}
+.first-box,.my-box{
+  width: 100%;
+}
+
+.my-box {
+  border: 3px solid pink;
+    left: 35px;
+  margin-top: 20px;
+  padding: 10px;        
+  width: 100px;   
 } 
 
 .first-box {
-  border: 6px solid pink; /* Creates the box outline */
-  position: absolute;
-  left: 0px;
+  border: 3px solid pink;
   margin-top: 20px;
   padding: 10px; 
-  height: 135px;          /* Adds space inside the box */
-  width: 480px;            /* Optional: Sets a specific width */
+  height: 215px; 
+  width: 100px;
 } 
-
-.my-box {
-  border: 6px solid pink; /* Creates the box outline */
-  position: absolute;
-  right: 150px;
-  padding: 10px;           /* Adds space inside the box */
-  width: 600px;            /* Optional: Sets a specific width */
-} 
-
-#myIframe {
-  display: none;
-}
-
-.iframe {
-  display: none;
+iframe{
+  @media screen and (max-width:1500px){
+    display:none
+  }
 }
 }
-
-/* call an element from your html and style it here! */
-/* for example... */
